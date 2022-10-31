@@ -1,4 +1,4 @@
-
+For Date upates :
 
 <!DOCTYPE html>
 <html>
@@ -11,7 +11,8 @@ document.getElementById("demo").innerHTML = d;
 </body>    
 </html>
 
-
+----------------------------------------------
+Using new Date(7 numbers), creates a new date object with the specified date and time:
 
 <!DOCTYPE html>
 <html>
@@ -23,7 +24,10 @@ document.getElementById("demo").innerHTML = d;
 </script>    
 </body>    
 </html>
+----------------------------------------------------------
+JavaScript counts months from 0 to 11.
 
+Specifying a month higher than 11, will not result in an error but add the overflow to the next year:
 
 <!DOCTYPE html>
 <html>
