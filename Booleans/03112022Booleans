@@ -1,0 +1,272 @@
+to display the value of Booleans (first value should be bigger in number)
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = Boolean(10 > 9);     
+</script>
+</body>    
+</html>
+
+==========================================================================================================
+
+for to display the value of 10 > 9 (we can use the () or without ()
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = (10 > 9);    
+</script>    
+</bosy>    
+</html>
+
+==========================================================================================================
+JavaScript Booleans 
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML =
+"100 is " + Boolean(100) + "<br>" +
+"3.14 is " + Boolean(3.14) + "<br>" +
+"-15 is " + Boolean(-15) + "<br>" +
+"Any (not empty) string is " + Boolean("Hello") + "<br>" +
+"'false' is " + Boolean('false') + "<br>" +
+"Any expression (except zero) is " + Boolean(1 + 7 + 3.14);
+</script>
+</body>
+</html>
+
+==========================================================================================================
+
+to display the value of X (X value should be greater than 0)
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 21;
+document.getElementById("demo").innerHTML = Boolean(x);    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+to display the value of X (X value should be greater than 0) 
++ or - is is also ok but output result will be true.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = -12;
+document.getElementById("demo").innerHTML = Boolean(x);    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+to display the value of Boolean value of undefined character;
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = "";
+document.getElementById("demo").innerHTML = Boolean("");    
+</script>    
+</body>    
+</html>
+	
+==========================================================================================================
+
+displaying the value of undfined character;
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x;
+document.getElementById("demo").innerHTML = Boolean(x);    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+displaying the value of undfined character;
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = null;
+document.getElementById("demo").innerHTML = Boolean(x);    
+</script>
+</body>    
+</html>
+
+==========================================================================================================
+
+displaying the value of undfined character;
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = false;
+document.getElementById("demo").innerHTML = Boolean(x);    
+</script>    
+</body>    
+</html>
+
+
+==========================================================================================================
+
+displaying the value of undfined character /;
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 10 / "Hello";
+document.getElementById("demo").innerHTML = Boolean(x);    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+Booleans and Boolean objects cannot be safely compared
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = false;
+let y = new Boolean(false);
+document.getElementById("demo").innerHTML = typeof x + "<br>" + typeof y;    
+</script>    
+</body>    
+</html>
+
+
+==========================================================================================================
+
+Booleans and Boolean objects cannot be safely compared
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = false;
+let y = new Boolean(false);
+document.getElementById("demo").innerHTML = (x==y);    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+
+Booleans and Boolean objects cannot be safely compared
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = false;
+let y = new Boolean(false);
+document.getElementById("demo").innerHTML = (x==y);    
+</script>>
+</Script>    
+</body>    
+</html>
+
+
+==========================================================================================================
+
+Booleans and Boolean objects cannot be safely compared:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = false;
+let y = new Boolean(false);
+document.getElementById("demo").innerHTML = (x==y);
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+Booleans and Boolean objects cannot be safely compared:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p> 
+<script>
+let x = false;
+let y = new Boolean(false);
+document.getElementById("demo").innerHTML = (x===y);
+</script>   
+</body>    
+</html>
+
+==========================================================================================================
+
+Booleans and Boolean objects cannot be safely compared.
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const x = new Boolean(false);
+const y = new Boolean(false);
+document.getElementById("demo").innerHTML = (x==y);
+</script>    
+</body>    
+</html>
+
+
+==========================================================================================================
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const x = new Boolean(false);
+const y = new Boolean(false);
+document.getElementById("demo").innerHTML = (x===y);
+</script>    
+</body>    
+</html>
