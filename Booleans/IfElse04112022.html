@@ -1,0 +1,66 @@
+JavaScript if, else, and else if
+
+Make a "Good day" greeting if the hour is less than 18:00:
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+if (new Date().getHours() < 18 ) {
+document.getElementById("demo").innerHTML = "Good Day!"; 
+
+}    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+A time-based greeting:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const hour = new Date().getHours();
+let greeting;
+if (hour <18) {
+    greeting = "Good Day";
+}
+else {
+    greeting = "Good Evening";
+
+}
+document.getElementById("demo").innerHTML = greeting; 
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+A time-based greeting:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const time = new Date().getHours();
+let greeting;
+if (time < 10) {
+  greeting = "Good morning";
+} else if (time < 20) {
+  greeting = "Good day";
+} else {
+  greeting = "Good evening";
+}
+document.getElementById("demo").innerHTML = greeting;
+</script>
+</body>
+</html>
+
+==========================================================================================================
+
