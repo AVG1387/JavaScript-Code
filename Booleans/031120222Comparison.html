@@ -1,0 +1,390 @@
+
+The == Operator
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 5;
+document.getElementById("demo").innerHTML = (x == 8);    
+</script>    
+</body>
+</html>
+
+
+==========================================================================================================
+
+x value should be same for example = x  5 = (x = 5) true. (- = - or + = +)
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 5;
+document.getElementById("demo").innerHTML = (x == 5);    
+</script>    
+</body>
+</html>
+
+
+==========================================================================================================
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 5;
+document.getElementById("demo").innerHTML = (x == "5");    
+</script>    
+</body>
+</html>
+
+
+==========================================================================================================
+
+output result will be true
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 5;
+document.getElementById("demo").innerHTML = (x === 5);    
+</script>    
+</body>
+</html>
+
+==========================================================================================================
+
+ output result will be false 
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 5;
+document.getElementById("demo").innerHTML = (x === "5");    
+</script>    
+</body>
+</html>
+==========================================================================================================
+
+Operator !
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 9;
+document.getElementById("demo").innerHTML = (x != 10);    
+</script>    
+</body>    
+</html>
+
+
+==========================================================================================================
+
+!== Operator
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 5;
+document.getElementById("demo").innerHTML = (x !== 5);    
+</script>    
+</body>    
+</html>
+
+
+==========================================================================================================
+
+The !== Operator
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 5;
+document.getElementById("demo").innerHTML = (x !== "5");    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+The !== Operator with out quotes
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 5;
+document.getElementById("demo").innerHTML = (x !== 8);    
+</script>    
+</body>    
+</html>
+
+
+
+==========================================================================================================
+
+The !== Operator if x (5) is greater than (8) = true or (5) > (8) is false
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 7;
+document.getElementById("demo").innerHTML = (x < 8);    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+
+if x is greater the output result will be true. if x is lesser than less than will be false.
+
+    <!DOCTYPE html>
+    <html>
+    <body>
+    <p id="demo"></p>
+    <script>
+    let x = 5;
+    document.getElementById("demo").innerHTML = (x >= 8);    
+    </script>    
+    </body>    
+    </html>
+
+==========================================================================================================
+
+The && Operator (Logical AND)
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 6;
+let y = 3;
+document.getElementById("demo").innerHTML = 
+(x < 10 && y > 1) + "<br>" + 
+(x < 10 && y < 1);
+</script>
+</body>
+</html>
+
+
+==========================================================================================================
+
+The || Operator (Logical OR)
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 6;
+let y = 3;
+document.getElementById("demo").innerHTML = 
+(x == 5 || y == 5) + "<br>" +
+(x == 6 || y == 0) + "<br>" +
+(x == 0 || y == 3) + "<br>" +
+(x == 6 || y == 3);
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+
+The NOT operator (!) returns true for false statements and false for true statements.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 6;
+let y = 3;
+document.getElementById("demo").innerHTML = 
+!(x === y) + "<br>" + 
+!(x > y);
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+The NOT operator (!) returns true for false statements and false for true statements.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = 6;
+let y = 3;
+document.getElementById("demo").innerHTML = 
+!(x == y) + "<br>" + !(x > y);
+</script>    
+</body>    
+</html>
+
+
+==========================================================================================================
+
+The () ? : Ternary Operator
+
+<!DOCTYPE html>
+<html>
+<body>
+<input id="age" value="18" />
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+let age = document.getElementById("age").value;
+let voteable = (age < 18) ? "Too young":"Old enough";
+  document.getElementById("demo").innerHTML = voteable + " to vote.";
+}
+</script>
+</body>
+</html>
+
+==========================================================================================================
+
+JavaScript Comparison (output result will be true)
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = 2 < 12;      - true
+</script>
+</body>
+</html>
+
+or 
+
+
+document.getElementById("demo").innerHTML = 2 < "12" ;    - True
+
+
+or 
+
+document.getElementById("demo").innerHTML = 2 < "John";    - false
+
+or 
+
+document.getElementById("demo").innerHTML = 2 > "John";    - false
+
+or 
+
+document.getElementById("demo").innerHTML = 2 == "John";   - false
+
+or 
+
+document.getElementById("demo").innerHTML = "2" < "12";   - false
+
+or 
+
+document.getElementById("demo").innerHTML = "2" > "12";   - false
+
+or 
+
+document.getElementById("demo").innerHTML = "2" == "12";   - false
+
+or 
+
+document.getElementById("demo").innerHTML = 2 == 12;   - false
+==========================================================================================================
+
+
+JavaScript Comparisons= Input your age and click the button:
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<input id="age" value="18" />
+<button onclick="myFunction()">Try it</button>
+<p id="demo"></p>
+<script>
+function myFunction() {
+    let votable;
+    let age = Number (document.getElementById("age").value);
+    if (isNaN(age)) {
+
+        votable = "Input is not a number";
+    } else {
+        votable = (age < 18) ? "Too Young" : "Old Enough";}
+        document.getElementById("demo").innerHTML = votable + " to vote";
+}    
+</script>    
+</body>    
+</html>	
+
+==========================================================================================================
+
+The Nullish Coalescing Operator (??)
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let name = null;
+let text = 'missing';
+let result = name ?? text;
+document.getElementById("demo").innerHTML = "The NAme is " + result;    
+</script>    
+</body>
+</html>
+
+==========================================================================================================
+
+The ?. Operator (The ?. operator returns undefined if an object is undefined or null (instead of throwing an error).).
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const car = {type:"Fiat", model:"500", color:"White"};
+let name = car?.name;
+document.getElementById("demo").innerHTML = name;
+</script>    
+</body>    
+</html>
+
+or
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const car = {type:"Fat", Mode:"2002", Color:"red"};
+let name = car?.name;
+document.getElementById("demo").innerHTML = name;    
+</script>
+</bosy>    
+</html>
+
+==========================================================================================================
