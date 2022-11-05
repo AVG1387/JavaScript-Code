@@ -1,0 +1,134 @@
+JS Loops
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const cars = ["Fiat", "Maruti", "Swift", "M800"] 
+let text = "";
+for (let i = 0; i < cars.length; i++) {
+text += cars[i] + "<br>";
+}   
+document.getElementById("demo").innerHTML = text; 
+</script>
+</body>    
+</html>
+
+==========================================================================================================
+
+JavaScript For Loop
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let text = "";
+for (let i = 0; i < 9; i++) {
+    text += " The number is " + i + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const cars = ["BMW", "Volvo", "Saab", "Ford"];
+let i, len, text;
+for (i = 0, len =cars.length, text =""; i < len; i++) {
+    text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+For Loop
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const cars = ["bmw", "fiat", "maruti", "skoda"];
+let text = "";
+let len = cars.length;
+let i = 2;
+for (; i < len; i++ ) {
+text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+
+</script>    
+</body>    
+</html>
+
+
+==========================================================================================================
+
+loop 2
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const cars = ["fiat", "Saab", "BMW", "Skoda"];
+let i = 2;
+let text = "";
+let len = cars.length;
+
+for (; i < len; i++) {
+    text += cars[i] + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>    
+</body>    
+</html>
+
+
+==========================================================================================================
+
+JS let
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+var i = 5;
+for (var i = 0; i < 10; i++) {    
+}    
+document.getElementById("demo").innerHTML = i;
+
+</script>    
+</body>
+
+</html>
+
+==========================================================================================================
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let i = 5;
+for (let i = 0; i < 10; i++ ) {
+}    
+document.getElementById("demo").innerHTML = i;
+</script>
+</bdy>    
+</html>
+
+
+==========================================================================================================
