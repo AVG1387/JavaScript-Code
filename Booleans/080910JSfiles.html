@@ -1,0 +1,513 @@
+JS Sets - 08-11-2022
+
+to create a Set from an Array:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo">
+<script>
+const letters = new Set(["a", "b", "c", "d", "e"]);
+document.getElementById("demo").innerHTML = letters.size;
+</script>
+</body>  
+</html>
+
+
+==========================================================================================================
+
+to add values to a Set:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const letters = new Set();
+letters.add("a");
+letters.add("b");
+letters.add("c");
+document.getElementById("demo").innerHTML = letters.size;
+</script>  
+</body>  
+</html>
+
+
+==========================================================================================================
+
+Iterating Set values:
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const letters = new Set(["a","b","c"]);
+let text = "";
+for (const x of letters.values()) {
+  text += x + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+</script>  
+</body>  
+</html>
+
+
+==========================================================================================================
+
+Add variables to a Set:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const letters = new Set();
+const a = "a";
+const b = "b";
+const c = "c";
+letters.add("a");
+letters.add("b");
+letters.add("c");
+document.getElementById("demo").innerHTML = letters.size;
+</script>  
+</body>  
+</html>
+
+
+==========================================================================================================
+
+Adding new elements to a Set:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const letters = new Set(["a", "b", "c"]);
+letters.add("d");
+letters.add("e");
+letters.add("f");
+document.getElementById("demo").innerHTML = letters.size;
+</script>  
+</body>  
+</html>
+
+
+==========================================================================================================
+
+Adding new elements to a Set:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const letters = new Set(["a","b","c"]);
+letters.add("d");
+letters.add("e");
+document.getElementById("demo").innerHTML = letters.size;
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+
+Adding equal elements to a Set:
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const letters = new Set();
+letters.add("a");
+letters.add("b");
+letters.add("c");
+letters.add("d");
+letters.add("e");
+letters.add("f");
+letters.add("a");
+letters.add("b");
+letters.add("b");
+document.getElementById("demo").innerHTML = letters.size;
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+
+forEach() calls a function for each element:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const letters = new Set(["a","b","c"]);
+let text = "";
+letters.forEach(function(value) {
+text += value + "<br>";  
+})
+document.getElementById("demo").innerHTML = text;
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+
+Set.values() returns a Set Iterator:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const letters = new Set(["a","b","c"]);
+document.getElementById("demo").innerHTML = letters.values();
+</script>
+</body>  
+</html>
+
+==========================================================================================================
+
+JS Maps - 08-11-2022
+
+Creating a Map from an Array:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const fruits = new Map([
+  ["apples", 500],
+  ["bananas", 300],
+  ["oranges", 200]
+]);
+document.getElementById("demo").innerHTML = fruits.get("apples");
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+
+JavaScript typeof = 09-11-2022
+
+The typeof Operator
+
+The typeof operator returns the type of a variable, object, function or expression:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+ document.getElementById("demo").innerHTML = 
+ "'John' is " + typeof "John" + "<br>" + 
+ "'3.14 is " + typeof 3.14 + "<br>" + 
+ "NaN is " + typeof false + "<br>" + 
+ "[1,2,3,4] is " + typeof [1,2,3,4] + "<br>" + 
+ "{name:'John', is " +   typeof {name:'John', age:34} + "<br>" + 
+ "new Date() is " + typeof new Date() + "<br>" +
+"function () {} is " + typeof new Date() + "<br>" + 
+ "myCar is " + typeof function () {} + "<br>" +    
+ "null is " + typeof null;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+The typeof Operator
+
+The typeof operator returns the type of a variable or an expression.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = 
+typeof "John" + "<br>" + 
+typeof 3.14 + "<br>" +
+  typeof true + "<br>" +  
+typeof false +  "<br>" + 
+typeof x;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+The typeof Operator
+The typeof operator returns object for both objects, arrays, and null.
+
+The typeof operator does not return object for functions.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = 
+typeof {name:'Anand', age:35} + "<br>" +
+typeof [1,2,3,4] + "<br>" + 
+typeof null + "<br>" + 
+typeof function myFunc(){};
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+
+The constructor Property
+
+The constructor property returns the constructor function for a variable or an object.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = 
+"john".constructor + "<br>" + 
+(3.14).constructor + "<br>" + 
+false.constructor + "<br>" + 
+[1,2,3,4].constructor + "<br>" + 
+{name:'john', age:35}.constructor + "<br>" + 
+new Date().constructor + "<br>" + 
+function () {}.constructor;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+
+JavaScript Arrays
+
+This "home made" isArray() function returns true when used on an array:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const fruits = ["Banna","Grapes","Organe","Apples"];
+document.getElementById("demo").innerHTML = isArray(fruits);    
+
+function isArray(myArray) {
+return myArray.constructor.toString().indexOf("Array") > -1; 
+}
+</script>    
+</body>    
+</html>
+==========================================================================================================
+
+JavaScript Array Object
+This "home made" isArray() function returns true when used on an array:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+  const fruits = ["Banana", "Orange", "Apple", "Mango"];
+  document.getElementById("demo").innerHTML = isArray(fruits);
+
+  function isArray(myArray) {
+    return myArray.constructor === Array;
+  }
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+JavaScript Date Object
+This "home made" isDate() function returns true when used on an date:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const myDate = new Date();
+document.getElementById("demo").innerHTML = isDate(myDate);
+function isDate(myDate) {
+    return myDate.constructor.toString().indexOf("Date") > -1;
+}     
+</script>
+</body>    
+</html>
+
+==========================================================================================================
+
+
+JavaScript Date Object ===
+This "home made" isDate() function returns true when used on an date:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const myDate = new Date();
+document.getElementById("demo").innerHTML = isDate(myDate);
+function isDate(myDate) {
+return myDate.constructor === Date;}
+</script>
+</body>
+</html>
+
+==========================================================================================================
+
+JavaScript Operators
+The typeof Operator
+The value (and the data type) of a variable with no value is undefined.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let car;
+document.getElementById("demo").innerHTML = 
+car + "<br>" + typeof car;    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+JavaScript Operators
+The typeof Operator
+Variables can be emptied if you set the value to undefined.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let car = "Maruti";
+car = undefined;
+document.getElementById("demo").innerHTML = car + "<br>" + typeof car;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+
+JavaScript
+An empty string has both a legal value and a type:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let car = "";
+document.getElementById("demo").innerHTML = 
+"The value is " + car + "<br>" + "The type is " + typeof car;     
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+JavaScript
+Objects can be emptied by setting the value to null.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let person = {fname:"Anand", lname:"Ganes",age:35, eyeclor:"blue"};
+person = null;
+document.getElementById("demo").innerHTML = typeof person;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+
+The undefined Data Type
+Objects can be emptied by setting the value to undefined.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let person = {fname:"Anand",lname:"gani",age:35,eyecolor:"red"};
+person = undefined;
+document.getElementById("demo").innerHTML = typeof person;    
+</script>
+</body>    
+</html>
+
+==========================================================================================================
+
+The typeof Operator
+Undefined and null are equal in value but different in type:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+document.getElementById("demo").innerHTML = 
+typeof undefined + "<br>" +
+typeof null + "<br>" + 
+(null === undefined) + "<br>" + 
+(null == undefined);
+</script>
+</body>    
+</html>
+
+
+==========================================================================================================
+
+
+The instanceof Operator
+The instanceof operator returns true if an object is an instance of a specified object:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const cars = ["Saab","BMW","Volvo"];
+document.getElementById("demo").innerHTML = 
+(cars instanceof Array) + "<br>" +
+(cars instanceof Object) + "<br>" +
+(cars instanceof String) + "<br>" +
+(cars instanceof Number);
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+
+The void Operator
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>
+<a href="javascript:void(document.body.style.backgroundColor='orange');">
+Click me to change the background color of body to orange.     
+</a>
+</p>    
+</body>    
+</html>
