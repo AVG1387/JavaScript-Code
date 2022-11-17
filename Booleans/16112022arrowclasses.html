@@ -1,0 +1,852 @@
+
+16-11-2022
+JavaScript Use Strict
+
+With "use strict":
+Using a variable without declaring it, is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your brower (F12) to se the error report.</p>
+<script>
+"Use Strict";
+x = 3.14;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+Global "use strict" declaration.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+   "Use strict";
+   myFucntion();
+   function myFucntion() {
+    y = 3.14;
+   } 
+</script>    
+</body>    
+</html>
+==========================================================================================================
+
+"use strict" in a function will only cause errors in that function.
+
+Activate debugging in your browser (F12) to see the error report.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+x = 3.14;
+myFunction();    
+function myFunction() {
+    "use strict";
+    y = 3.14;
+}
+</script>
+</boy>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Using a variable without declaring it, is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+x = 3.14;    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Using an object without declaring it, is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in  your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+x = {p:10, p:20};    
+</script>    
+</body>
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Deleting a variable (or object) is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report. </p>
+<script>
+"use strict";
+let x = 3.14;
+delete  x;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Deleting a function is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+function x(p1, p2) {};
+delete x;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Deleting a function is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+function x(p1, p2) {};
+delete x;    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Duplicating a parameter name is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use script";
+function x(p1, p2) {};
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Octal numeric literals are not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use script";
+let x = 010;     
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Octal escape characters are not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+let x = "\010";  
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Writing to a read-only property is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activaate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+const obj = {};
+Object.defineProperty(obj, "x", {value:0, writable:false});
+obj.x = 3.14;
+</script>
+</body>
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Writing to a get-only property is not allowed.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+const obj = {get x() {return 0} };
+obj.x = 3.14;    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Deleting an udeletable property is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+delete Object.prototype;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+The string "eval" cannot be used as a variable.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+let eval = 3.14;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+The string "arguments" cannot be used as a variable.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+let arguments = 3.14;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+The with statement is not allowed.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+with (Math){x = cos(2)}; 
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+For security reasons, eval() is not allowed to create variables in the scope from which it was called.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+eval ("x = 2");
+alert (x);
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+For security reasons, eval() is not allowed to create variables in the scope from which it was called.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+eval ("var x = 2");
+alert (x);
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+Using eval()
+For security reasons, eval() is not allowed to create variables in the scope from which it was called.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+eval ("let x = 2");
+alert (x);
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+With "use strict":
+
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Inside functions, the "this" keyword is no longer the global object if not specified:</h3>
+<script>
+"use strict";
+function myFunction() {
+alert(this);
+}
+myFunction();
+</script>
+</body>
+</html>
+
+==========================================================================================================
+
+With "use strict":
+Future reserved keywords are not allowed in strict mode.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p>Activate debugging in your browser (F12) to see the error report.</p>
+<script>
+"use strict";
+let public = 1500;
+</script>
+</body>
+</html>
+
+==========================================================================================================
+
+The JavaScript this Keyword
+
+In this example, this refers to the person object.
+
+Because fullName is a method of the person object.
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const person = {firstName: "Anand", lastName:"Ganesh", id: 5566, fullName: function() {
+    return this.firstName + " " + this.lastName;
+} 
+};
+document.getElementById("demo").innerHTML = person.fullName();
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+The JavaScript this Keyword
+In this example, this refers to the person object.
+
+Because fullName is a method of the person object.
+
+this in a Method
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const person = {
+    firstName: "Ananda",
+    lastName: " Ganesh",
+    id: 5566,
+    fullName : function() {
+        return this.firstName + " " + this.lastName;
+    }
+};
+document.getElementById("demo").innerHTML = person.fullName();    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+this Alone
+
+In this example, this refers to the window object:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let x = this;
+document.getElementById("demo").innerHTML = x;
+</Script>    
+</body>    
+</html>
+
+==========================================================================================================
+The JavaScript this Keyword
+In this example, this refers to the window object:
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+"use strict";
+let x = this;
+document.getElementById("demo").innerHTML = x;
+</Script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+this in a Function (Default)
+
+In this example, this refers to the the window object:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p> 
+<script>
+document.getElementById("demo").innerHTML = myFunction();
+function myFunction() {
+    return this;
+}
+</script>   
+</body>    
+</html>
+
+
+==========================================================================================================
+
+The JavaScript this Keyword
+In a function, by default, this refers to the global object.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+"use strict";
+document.getElementById("demo").innerHTML = myFunction();
+function myFunction() {
+    return this;
+}    
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+this in Event Handlers
+
+The JavaScript this Keyword
+
+<!DOCTYPE html>
+<html>
+<body>
+<button onclick="this.style.display='none'">Click to Remove Me!</button>
+</body>
+</html>
+
+==========================================================================================================
+
+Object Method Binding
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const person = {firstName:"Ananda", lastName:"Ganesh", id: 7788, myFunction() {
+    return this;
+}
+};
+document.getElementById("demo").innerHTML = person.myFunction();
+</script>
+</body>    
+</html>
+==========================================================================================================
+
+The JavaScript this Keyword
+In this example, this refers to the person object.
+
+Because fullName is a method of the person object.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const person = {
+    firstName: "Ananda",
+    lastName: "Ganesh",
+    id: 5975,
+    fullName: function() {
+return this.firstName + " " + this.lastName;
+
+    }
+};
+document.getElementById("demo").innerHTML = person.fullName();
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+The JavaScript this Keyword
+In this example this refers to person2, even if it is a method of person1:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const person1 = {
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
+
+    }
+}    
+const person2 = {
+    firstName: "Ananda",
+    lastName: "Ganesh",
+} 
+let x = person1.fullName.call(person2);
+document.getElementById("demo").innerHTML = x;
+</script>    
+</body>    
+</html>
+
+==========================================================================================================
+
+JavaScript Function bind()
+This example creates 2 objects (person and member).
+
+The member object borrows the fullname method from person:
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+const person = {
+firstName:"John",
+lastName: "Doe",
+fullName: function() {
+return this.firstName + " " + this.lastName;
+}
+}
+const member = {
+firstName:"Ananda",
+lastName: "Ganesh",
+}
+let fullName = person.fullName.bind(member);
+document.getElementById("demo").innerHTML = fullName();
+</script>
+</body>
+</html>
+==========================================================================================================
+
+17-11-2022
+
+JavaScript Arrow Function
+
+JavaScript Functions
+The Arrow Function
+This example shows the syntax of an Arrow Function, and how to use it.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+ let myFunction = (a,b) => a*b;
+ document.getElementById("demo").innerHTML = myFunction(4*5); 
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+
+Before Arrow:
+
+This example shows the syntax of a function, without the use of arrow function syntax.
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let hello = "";
+hello = function() {
+  return "Hello World!";
+} 
+document.getElementById("demo").innerHTML = hello();
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+
+With Arrow Function:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let hello = "";
+hello = () => {
+  return "Hello Wordl!";
+}  
+document.getElementById("demo").innerHTML = hello();
+</script>
+</body>  
+</html>
+
+==========================================================================================================
+
+Arrow Functions Return Value by Default:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let hello = "";
+hello = () => "Hello World!";
+document.getElementById("demo").innerHTML = hello();  
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+
+Arrow Function With Parameters:
+
+<<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let hello = "";
+hello = (val) => "Hello " + val;
+document.getElementById("demo").innerHTML = hello("Anand!"); 
+</script>  
+</body>  
+</html>
+
+
+==========================================================================================================
+
+Arrow Function Without Parentheses:
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+let hello = "";
+hello = val => "Hello " + val;
+document.getElementById("demo").innerHTML = hello("Universe!");
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+
+JavaScript "this"
+This example demonstrate that in a regular function, the "this" keyword represents different objects depending on how the function was called.
+
+Click the button to execute the "hello" function again, and you will see that this time "this" represents the button object.
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<button id="btn">Click Me!</button>
+<p id="demo"></p>
+<script>
+let hello = "";
+hello = function() {
+  document.getElementById("demo").innerHTML += this; 
+}  
+window.addEventListener("load", hello);
+document.getElementById("btn").addEventListener("click",hello);
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+With an arrow function this represents the owner of the function:
+
+<!DOCTYPE html>
+<html>
+<body>
+<button id="btn">Click Me!</button>
+<p id="demo"></p>
+<script>
+let hello = "";
+hello = () => {
+  document.getElementById("demo").innerHTML += this;
+}
+window.addEventListener("load", hello);
+document.getElementById("btn").addEventListener("click", hello);
+</script>
+</body>
+</html>
+
+==========================================================================================================
+
+JavaScript Classes
+
+JavaScript Class Syntax
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+}
+}  
+const myCar = new Car("BMW", 2022);
+document.getElementById("demo").innerHTML = 
+myCar.name + "  " + myCar.year;
+</script>  
+</body>  
+</html>
+
+==========================================================================================================
+
+JavaScript Class Method
+How to define and use a Class method.
+
+
+<!DOCTYPE html>
+<html>
+<body>
+<p id="demo"></p>
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+}
+  age() {
+    let date = new Date();
+    return date.getFullYear() - this.year;
+}
+}
+let myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML =
+"My car is " + myCar.age() + " years old.";
+</script>
+</body>
+</html>
+
+==========================================================================================================
+
+JavaScript Class Method
+Pass a parameter into the "age()" method.
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript Class Method</h2>
+
+<p>Pass a parameter into the "age()" method.</p>
+
+<p id="demo"></p>
+
+<script>
+class Car {
+  constructor(name, year) {
+    this.name = name;
+    this.year = year;
+  }
+  age(x) {
+    return x - this.year;
+  }
+}
+
+let date = new Date();
+let year = date.getFullYear();
+
+let myCar = new Car("Ford", 2014);
+document.getElementById("demo").innerHTML=
+"My car is " + myCar.age(year) + " years old.";
+</script>
+</body>
+</html>
+
+==========================================================================================================
